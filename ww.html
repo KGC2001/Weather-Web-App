@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Web App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 150px;
+    }
+    .main_container{
+      background: linear-gradient(135deg,#00feba,#5b548a);
+      border-radius: 20px;
+      padding: 20px 35px;
+    }
+    #cityInput{
+      height: 25px;
+      border: 0;
+      outline: 0;
+      border-radius: 30px;
+      padding: 5px 10px;
+      margin-right: 5px;
+      margin-bottom: 10px;
+      font-size: medium;
+    }
+    #sb{
+      height: 35px;
+      outline: 0;
+      border: 0;
+      border-radius: 50%;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+      font-size: medium;
+    }
+    #weatherInfo{
+      padding-top: 10px;
+    }
+    #hrline{
+      display: none;
+      
+    }
+    .mhm{
+            text-align: center;
+            font-size: 50px;
+            background: linear-gradient(
+                    orange,
+                    white,
+                    
+                    rgb(101, 227, 116));
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        
+        .si{
+          width: 65%;
+        }
+        .cnc{
+          padding: 0px 0px 0px 40px;
+          margin: 10px;
+          margin-top: 0px;
+        }
+        
+  
+  </style>
+</head>
+<body>
+  <div class="main_container">
+    <h1 class="mhm"> 
+      Weather Web App
+      
+      
+    </h1>
+    <div>
+      <input type="text" id="cityInput" placeholder="Enter city name" spellcheck="false" class="si">
+      <button id="sb" type="submit" onclick="getWeather()"><i class="fa fa-search"></i></button>
+    </div>
+    <hr id="hrline">
+    <div id="weatherInfo"></div>
+  </div>
+
+  <script src="ww.js"></script>
+</body>
+</html>
